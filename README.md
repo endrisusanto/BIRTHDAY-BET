@@ -1,11 +1,46 @@
-<div align="center">
+# Neon Obsidian - Birthday Gift Bet
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A modern, neon-themed betting application for voting on birthday gifts. Built with React, Tailwind CSS, and TypeScript.
 
-  <h1>Built with AI Studio</h2>
+## Features
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+- **Neon Obsidian UI**: Dark theme with vibrant neon accents.
+- **Betting System**: Pool-based betting on gift candidates.
+- **Admin Dashboard**: Manage candidates, view all bets, and analytics.
+- **User Profiles**: Track your betting history and contribution stats.
+- **Responsive**: Works on mobile, tablet, and desktop.
+- **Persistence**: Uses LocalStorage to simulate a database.
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Deployment
 
-</div>
+The application is containerized using Docker and configured to run on port **6969**.
+
+### Prerequisites
+
+- Docker installed on your machine.
+
+### Build and Run
+
+1.  **Build the Docker image:**
+    ```bash
+    docker build -t birthday-bet .
+    ```
+
+2.  **Run the container:**
+    ```bash
+    docker run -p 6969:6969 birthday-bet
+    ```
+
+3.  **Access the app:**
+    Open your browser and go to `http://localhost:6969`.
+
+## Admin Access
+
+- **Password**: `admin123`
+- Use the Lock icon or the '+' button to access admin features.
+
+## Technologies
+
+- **Frontend**: React, TypeScript, Lucide React
+- **Styling**: Tailwind CSS
+- **Container**: Nginx, Docker
